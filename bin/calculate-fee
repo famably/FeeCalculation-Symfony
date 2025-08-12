@@ -1,0 +1,12 @@
+#!/usr/bin/env php
+<?php
+
+require_once dirname(__DIR__).'/vendor/autoload.php';
+
+use Lendable\Interview\FeeCalculator\Application\Command\CalculateFeeCommand;
+use Symfony\Component\Console\Application;
+
+$application = new Application();
+$application->add(new CalculateFeeCommand());
+$application->setDefaultCommand('app:calculate-fee', true);
+$application->run();
