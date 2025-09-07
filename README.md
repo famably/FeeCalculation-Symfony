@@ -1,4 +1,4 @@
-Lendable Interview Test - Fee Calculation
+Fee Calculation
 =========================================
 
 ## Background
